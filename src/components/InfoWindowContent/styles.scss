@@ -1,0 +1,14 @@
+.info-window {
+  width: 10rem;
+  height: 5rem;
+  text-align: left;
+  margin: .5rem;
+
+  &__header {
+    color: #222222;
+  }
+
+  &__text {
+    color: #2f2f2f;
+  }
+}
