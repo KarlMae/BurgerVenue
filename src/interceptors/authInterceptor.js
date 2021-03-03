@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const clientId = process.env.FOURSQUARE_CLIENT_ID
-const clientSecret = process.env.FOURSQUARE_CLIENT_SECRET
+const clientId = 'X4U5WCPYGMQUW4U5Z3N4IQXQR1P4IIPUG5RBXEZSENFQY5Z3'
+const clientSecret = 'RCTOSXPSP1IUO3JEK2JRVLNEUGOPZNKLLF2ETNCDH24MZ0DJ'
 
 export const addFourSquareCredentialInterceptor = () => {
     axios.interceptors.request.use(function (config) {
