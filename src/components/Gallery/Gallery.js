@@ -12,7 +12,7 @@ function Gallery(props) {
         }
 
         return image.venueId === selectedVenue.id ? -1 : 1;
-    }
+    };
 
     return (
         <div className="gallery">

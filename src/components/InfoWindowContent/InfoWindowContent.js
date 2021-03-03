@@ -9,7 +9,7 @@ function InfoWindowContent(props) {
             <h3 className='info-window__header'>{header}</h3>
             <p className='info-window__text'>{text}</p>
         </div>
-    )
+    );
 }
 
 export default InfoWindowContent;

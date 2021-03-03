@@ -9,7 +9,7 @@ function LoadingSpinner() {
             <div></div>
             <div></div>
         </div>
-    )
+    );
 }
 
 export default LoadingSpinner;

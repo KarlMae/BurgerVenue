@@ -21,7 +21,7 @@ function FrontPage() {
             for (const venue of venues) {
                 const images = await services.fetchVenuePhotos(venue.id);
                 if (images.length) {
-                    const image = images[0]
+                    const image = images[0];
                     venueImages.push({
                         venueId: venue.id,
                         path: image.prefix + '500x500' + image.suffix
@@ -53,7 +53,8 @@ function FrontPage() {
                 left: 0,
                 behavior: 'smooth'
             }
-        )
+        );
+
         setSelectedVenue(venues.find(venue => venue.id === venueId));
     }
 

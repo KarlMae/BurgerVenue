@@ -10,7 +10,7 @@ function Header(props) {
             <h3 className='header__title'>Venues</h3>
             {isLoading && <TextLoader className='header__loading-notification'/>}
         </div>
-    )
+    );
 }
 
 export default Header;

@@ -11,7 +11,7 @@ function MapContainer(props) {
         position: 'relative',
         width: '100%',
         height: '100%'
-    }
+    };
 
     return (
         <Map
@@ -40,7 +40,7 @@ function MapContainer(props) {
                 <InfoWindowContent header={selectedVenue?.name} text={selectedVenue?.location.address}/>
             </InfoWindow>
         </Map>
-    )
+    );
 }
 
 export default GoogleApiWrapper({
