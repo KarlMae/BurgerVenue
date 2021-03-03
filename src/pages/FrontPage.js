@@ -18,13 +18,13 @@ function FrontPage() {
         const fetchImages = async (venues) => {
             const venueImages = [];
 
-            for (const [i, venue] of venues.entries()) {
-                const images = ['https://picsum.photos/id/' + i + '/200/300']//await services.fetchVenuePhotos(venue.id);
+            for (const venue of venues) {
+                const images = await services.fetchVenuePhotos(venue.id);
                 if (images.length) {
                     const image = images[0]
                     venueImages.push({
                         venueId: venue.id,
-                        path: image //image.prefix + '500x500' + image.suffix
+                        path: image.prefix + '500x500' + image.suffix
                     });
                 }
             }
